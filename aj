@@ -156,7 +156,7 @@ end)
 
 local Box = Gui:WaitForChild("MessagePromptBox")
 Box:GetPropertyChangedSignal("Visible"):Connect(function()
-    if Box:WaitForChild("Box"):WaitForChild("TextBox").Text:lower():find("The trade was canceled") then
+    if Box:WaitForChild("Box"):WaitForChild("TextBox").Text:lower():find("the trade was canceled") then
         isStealing = false
         left()
     end
